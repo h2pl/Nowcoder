@@ -1,7 +1,5 @@
 package BAT.BinTree;
 
-import BAT.BinTree.basic.TreeNode;
-
 import java.util.ArrayList;
 
 import static BAT.BinTree.中序遍历的序列.inOrderSeq;
