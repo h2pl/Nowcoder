@@ -1,4 +1,4 @@
-package BAT.BinTree;
+package BAT.BinTree.basic;
 
 import java.util.LinkedList;
 import java.util.Queue;

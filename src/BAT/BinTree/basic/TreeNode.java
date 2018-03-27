@@ -1,4 +1,4 @@
-package BAT.BinTree;
+package BAT.BinTree.basic;
 
 /**
  * Created by 周杰伦 on 2018/3/14.

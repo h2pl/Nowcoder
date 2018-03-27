@@ -1,11 +1,11 @@
 package BAT.BinTree;
 
-import java.util.Set;
+import BAT.BinTree.basic.TreeNode;
 
 /**
  * Created by 周杰伦 on 2018/3/16.
  */
-public class Serialize {
+public class 序列化二叉树 {
     static StringBuffer sb = new StringBuffer();
     static String Serialize(TreeNode root) {
         if(root == null) {
@@ -40,6 +40,6 @@ public class Serialize {
     public static void main(String[] args) {
         TreeNode t = TreeNode.getNode();
         System.out.println(Serialize(t));
-        PrintByRow.printByRow(Deserialize(Serialize(t)));
+        按行打印二叉树.printByRow(Deserialize(Serialize(t)));
     }
 }
