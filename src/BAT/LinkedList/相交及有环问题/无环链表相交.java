@@ -17,6 +17,8 @@ public class 无环链表相交 {
         b= reverse(b);
         while (a != null && b != null) {
             if (a == b)return a;
+            a = a.next;
+            b = b.next;
         }
         return null;
     }

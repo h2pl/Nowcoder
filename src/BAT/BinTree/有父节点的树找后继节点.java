@@ -1,5 +1,7 @@
 package BAT.BinTree;
 
+import BAT.BinTree.basic.TreeNode;
+
 import java.util.ArrayList;
 
 import static BAT.BinTree.中序遍历的序列.inOrderSeq;
@@ -12,13 +14,13 @@ public class 有父节点的树找后继节点 {
     public static void main(String[] args) {
 
     }
-    public PNode findNextNode(PNode anynode) {
+    public TreeNode findNextNode(PNode anynode) {
         if (anynode == null) return null;
         PNode p = anynode;
         while (p.parent != null) {
             p = p.parent;
         }
-        ArrayList<PNode> list = inOrderSeq(p);
+        ArrayList<TreeNode> list = inOrderSeq(p);
         for (int i = 0;i < list.size();i ++) {
             if (list.get(i) == anynode) {
                 if (i + 1 < list.size()) {
@@ -31,7 +33,7 @@ public class 有父节点的树找后继节点 {
 
     }
 }
-class PNode {
+class PNode extends TreeNode{
     public int val;
     public PNode left;
     public PNode right;

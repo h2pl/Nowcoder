@@ -8,7 +8,7 @@ import java.util.*;
  * Created by 周杰伦 on 2018/3/14.
  */
 public class 按行打印二叉树 {
-    ArrayList<ArrayList<Integer> > Print(TreeNode pRoot) {
+    ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
         Queue<TreeNode> queue = new LinkedList<>();
         TreeNode root = pRoot;
         if(root == null) {

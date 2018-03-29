@@ -1,4 +1,6 @@
 package BAT.BinTree;
+import BAT.BinTree.basic.TreeNode;
+
 import java.util.ArrayList;
 
 /**
@@ -9,27 +11,27 @@ import java.util.ArrayList;
  */
 public class 中序遍历的序列 {
     public static void main(String[] args) {
-        PNode root = new PNode(0);
-        PNode treeNode1=new PNode(1);
-        PNode treeNode2=new PNode(2);
-        PNode treeNode3=new PNode(3);
-        PNode treeNode4=new PNode(4);
+        TreeNode root = new TreeNode(1);
+        TreeNode treeNode1=new TreeNode(0);
+        TreeNode treeNode2=new TreeNode(3);
+        TreeNode treeNode3=new TreeNode(2);
+        TreeNode treeNode4=new TreeNode(4);
         root.left=treeNode1;
         treeNode2.left=treeNode3;
         treeNode2.right=treeNode4;
         root.right=treeNode2;
 
-        ArrayList<PNode> list = inOrderSeq(root);
-        for (PNode p : list) {
+        ArrayList<TreeNode> list = inOrderSeq(root);
+        for (TreeNode p : list) {
             System.out.println(p.val);
         }
     }
-    static ArrayList<PNode> list = new ArrayList<>();
-    public static ArrayList<PNode> inOrderSeq(PNode pNode) {
-        if (pNode == null) return null;
-        inOrderSeq(pNode.left);
-        list.add(pNode);
-        inOrderSeq(pNode.right);
+    static ArrayList<TreeNode> list = new ArrayList<>();
+    public static ArrayList<TreeNode> inOrderSeq(TreeNode TreeNode) {
+        if (TreeNode == null) return null;
+        inOrderSeq(TreeNode.left);
+        list.add(TreeNode);
+        inOrderSeq(TreeNode.right);
         return list;
     }
 }

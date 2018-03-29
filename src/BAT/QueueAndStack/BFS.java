@@ -1,6 +1,6 @@
 package BAT.QueueAndStack;
 
-import BAT.BinTree.TreeNode;
+import BAT.BinTree.basic.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
