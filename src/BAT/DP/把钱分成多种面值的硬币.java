@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Created by 周杰伦 on 2018/3/18.
  * 一个硬币数组，面值不同，组成aim的面值一共有几种方法
  */
-public class Coins {
+public class 把钱分成多种面值的硬币 {
 
     int res;
     public int coinsWay(int []coins, int aim) {

@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by 周杰伦 on 2018/3/18.
  */
-public class findLCS {
+public class 最长公共子序列 {
     public static int findLCS(String s1, String s2) {
         int n = s1.length();
         int m = s2.length();

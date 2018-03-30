@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by 周杰伦 on 2018/3/18.
  */
-public class MinimumPath {
+public class 矩阵中走的最短路径 {
     public int DP(int [][]map ) {
         int n = map.length -1;
         int m = map[0].length -1;

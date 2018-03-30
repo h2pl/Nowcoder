@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by 周杰伦 on 2018/3/18.
  */
-public class LongestIncreasingSubsequence {
+public class 最长递增子序列 {
     public static int longestIncreasingSubsequence(String str) {
         //dpi代表以i为结尾的最长递增子序列长度。
         if(str.equals("") || str == null)return 0;

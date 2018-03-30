@@ -3,7 +3,7 @@ package BAT.DP;
 /**
  * Created by 周杰伦 on 2018/3/18.
  */
-public class MinCostOfStringEdit {
+public class 把字符串1修改成字符串2的最大开销 {
     public static int minCost(String s1, String s2, int ic, int rc, int dc) {
         int n = s1.length();
         int m = s2.length();

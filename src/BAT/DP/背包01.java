@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by 周杰伦 on 2018/3/18.
  */
-public class BackPack01 {
+public class 背包01 {
     public static int maxValue(int v[], int w[], int n,int W) {
         int [][]dp = new int[n][W+1];
         for(int i=0;i<n;i++) {
